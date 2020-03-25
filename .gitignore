@@ -1,0 +1,15 @@
+*.o
+*.exe
+*.depend
+*.cbp
+*.layout
+*.bck
+
+
+**/bin
+**/obj
+**/Debug
+
+**/debug_runs
+**/traces
+**/validation_runs
