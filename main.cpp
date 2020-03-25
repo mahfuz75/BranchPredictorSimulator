@@ -87,7 +87,7 @@ int main(int argc, char **argv)
         cout << "number of mispredictions:\t" << misprediction_count << endl;
         printf("misprediction rate:\t\t%.2lf%%\n", misprediction_rate);
 
-        //BP.PrintContents();
+        BP.PrintContents();
     }
 
     iFILE.close();
