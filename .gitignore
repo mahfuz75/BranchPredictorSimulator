@@ -4,6 +4,7 @@
 *.cbp
 *.layout
 *.bck
+*.txt
 
 
 **/bin
