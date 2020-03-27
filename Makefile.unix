@@ -19,7 +19,7 @@ _LIB =
 _LDFLAGS = 
 
 INC = $(_INC) -Iinclude
-CFLAGS = $(_CFLAGS) -O2
+CFLAGS = $(_CFLAGS) -O3
 RESINC = $(_RESINC)
 RCFLAGS = $(RCFLAGS)
 LIBDIR = $(_LIBDIR)

@@ -99,6 +99,11 @@ int main(int argc, char **argv)
 bool validate_parameters(int param_cnt, char **input_params)
 {
     bool is_valid = true;
+    if(!(param_cnt == 4 || param_cnt == 5 || param_cnt == 7))
+    {
+        cout << "Error: Invalid parameter count" << endl;
+        return false;
+    }
     if(!(strcmp(input_params[1], "bimodal") == 0 || strcmp(input_params[1], "gshare") == 0 || strcmp(input_params[1], "hybrid") == 0))
     {
         cout << "Error: Branch predictor type should be bimodal, gshare or hybrid" << endl;
@@ -172,7 +177,7 @@ bool validate_parameters(int param_cnt, char **input_params)
 
 void show_help(string filename)
 {
-    cout << "For 'bimodal' branch predictor" << endl;
+    cout << "\nFor 'bimodal' branch predictor" << endl;
     cout << "Usage: ./sim bimodal <M2> <trace_file>\n" << endl;
     cout << "For 'gshare' branch predictor" << endl;
     cout << "Usage: ./sim gshare <M1> <N> <trace_file>\n" << endl;
